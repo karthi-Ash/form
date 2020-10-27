@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+ <style>
+     body{
+        font-family:Calibri, Helvetica, sans-serif;
+         background: blanchedalmond;
+     }
+ .formbox{
+     width:270px;
+     height:440px;
+     background-color: aqua;
+     position: relative;
+     padding:5px;
+     margin: 40px auto;
+ }
+ input[type="text"] , input[type="email"] , textarea {
+     padding: 5px;
+     margin:10px auto;
+     width:100%;
+ }
+input[type=image] {
+    width:100px;
+    height:70px;
+    padding:3px;
+    margin: 2px;
+
+}
+</style>
+</head>
+<body>
+<div class="formbox">
+    <fieldset>
+        <legend>Contact Us
+            </legend>
+<form method="post">
+  <input type="text" name="fname" placeholder="Full Name" required> <br>
+  <input type="email" name="email" placeholder="Email" required> <br>
+  <textarea cols="26" rows="8" name="address" placeholder="Your Address" required> 
+    </textarea> <br>
+    <input type="checkbox" name="check"> Send Response To Mail <br>   
+    <input type="image" src="images/submit.png" >
+</fieldset>
+</form>
+</div>
+</body>
+</hmtl>

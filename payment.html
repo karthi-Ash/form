@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <style>
+            body{
+             font-family:Calibri, Helvetica, sans-serif;
+             background-color:slategrey;
+            }
+            div{
+              width: 550px;
+              height: 100%;
+              background-color:thistle;
+              padding: 50px;
+              position: relative;
+              margin: 10px auto;
+            }
+            input[type=text] ,input[type=tel],input[type=email] , textarea{
+            padding: 5px;
+            width: 100%;
+            margin: 8px auto;
+            }
+            input[type=radio] {  
+            margin-right: 10px; 
+            }
+            input[type=image] {
+            width:180px;
+            height:60px;
+            padding:3px;
+            margin: 2px;
+            }
+        </style>
+    </head>
+        <body>
+            <div>
+                <fieldset>
+                    <legend>
+                        Payment Form
+                        </legend>
+                        <form>
+                            <label>Name
+                            </label> <br>
+                            <input type="text" name="fnmae" placeholder="Your Name" required><br>
+                            <label>E-Mail
+                            </label> <br>
+                            <input type="email" name="email" placeholder="E-Mail" required><br>
+                            <label>Phone
+                            </label><br> 
+                            <input type="tel" name="phn" placeholder="Phone.No" required><br>
+                            <label>Billing Address
+                            </label><br>
+                            <input type="text" name="add" placeholder="Street Address"><br>
+                            <input type="text" name="city" placeholder="City"><br>
+                            <input type="text" name="state" placeholder="State"><br>
+                            <input type="text" name="pincode" placeholder="Pin Code"><br>
+                            <input type="text" name="country" placeholder="Country"><br>
+                            <label>Is shipping address same as billing address?
+                            </label><br>
+                            <input type="radio" name="yes">Yes<br>
+                            <input type="radio"name="no">No<br>
+                            <label>Send Gift?
+                            </label><br>
+                            <input type="radio" name="yes">Yes<br>
+                            <input type="radio"name="no">No<br>
+                            <label>Special Instructions
+                            </label><br>
+                            <textarea cols="60" rows="10">   
+                            </textarea>
+                            <label>
+                                Payment Method :
+                            </label> <br>
+                            <input type="radio" name="Payment">Debit Card <br>
+                            <input type="text" name="username" placeholder="Card Holder Name"><br>
+                            <input type="text" name="cardno" placeholder="Card Number"> <br>
+                            <input type="text" name="exp" placeholder="Expery Date"> <br>         
+                            <input type="text" name="cvv" placeholder="CVV"><br>
+                            <label>UPI
+                            </label>  <br>
+                            <input type="radio" name="Phonepay">Phonepay<br>
+                            <input type="radio" name="Gpay">Gpay<br>
+                            <input type="radio" name="paytm">Paytm<br>  
+                            <input type="image" src="images/Payment.png">         
+                        </form>
+                    </fieldset>
+
+            </div>
+        </body>
+    </html>

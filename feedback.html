@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <style>
+            body{
+                font-family:Calibri, Helvetica, sans-serif;
+                background-color:lavenderblush;
+            }
+            div{
+                width: 600px;
+                height:630px;
+                background-color:navajowhite;
+                padding: 5px;
+                position: relative;
+                margin: 40px auto;
+            }
+            input[type=radio] {
+                padding: 5px;
+                margin: 10px 20px;
+            }
+        input[type=text] ,input[type=email] ,textarea{
+            padding: 5px;
+            width: 100%;
+            margin: 10px auto;
+        }
+        input[type=image] {
+        width:150px;
+        height:40px;
+        padding:3px;
+        margin: 2px;
+        }
+        hr {  
+        border: 1px solid #f1f1f1;  
+        margin-bottom: 25px;  
+        } 
+            </style>
+        </head>
+        <body>
+            <div>
+             <fieldset>
+                 <legend>Feedback 
+                     </legend>
+           <p><h4>Feedback Form</h4></p>
+            <p>We would love to hear your thoughts, suggestions, concerns or problems with anything so we can improve!
+            </p>
+            <hr>
+            <form method="POST">
+                <label> Feedback Type
+                    </label> <br>
+                   <input type="radio" name="comments" value="C" required>Comments 
+                   <input type="radio" nmae="suggestions" value="s"required>Suggestions
+                   <input type="radio" name="questions" value="q" required>Questions <br>
+                   <label for="Feedback">Describe Your Feedback Here...</label><br>
+                   <textarea cols="70" rows="10" placeholder="Enter Your Feedback" required>
+                   </textarea><br>
+                   <input type="text" name="fname" placeholder="First Name" required>
+                   <input type="text" name="lname" placeholder="Last Name" required>
+                   <input type="email" name="email" placeholder="Email" required>
+                   <input type="image" src="images/feedback.png">
+            </form>
+             </fieldset>
+           </div>
+        </body>
+    </html>
